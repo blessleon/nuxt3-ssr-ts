@@ -1,0 +1,33 @@
+{
+  "name": "nuxtapp",
+  "version": "1.0.1",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev -p 3001",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@element-plus/nuxt": "^1.0.4",
+    "@types/mockjs": "^1.0.7",
+    "cross-env": "^7.0.3",
+    "css-loader": "^6.7.3",
+    "dotenv": "^16.0.3",
+    "mockjs": "^1.1.0",
+    "nuxt": "3.0.0",
+    "rollup-plugin-visualizer": "^5.9.0",
+    "sass": "^1.60.0",
+    "sass-loader": "^13.2.2",
+    "unplugin-auto-import": "^0.15.2",
+    "unplugin-vue-components": "^0.24.1"
+  },
+  "dependencies": {
+    "@sentry/browser": "^7.42.0",
+    "@sentry/node": "^7.46.0",
+    "@sentry/tracing": "^7.42.0",
+    "@sentry/vue": "^7.46.0",
+    "element-plus": "^2.3.2"
+  }
+}

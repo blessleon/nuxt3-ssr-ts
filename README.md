@@ -1,2 +1,4 @@
-# nuxt3-ssr-tsx
-nuxt3, ssr mode, tsx, mockjs, sentry 
+# nuxt3-ssr-ts
+nuxt3, ssr mode, ts, mockjs, sentry, pm2 
+
+
