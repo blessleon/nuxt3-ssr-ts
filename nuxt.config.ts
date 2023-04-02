@@ -11,7 +11,7 @@ console.log('process.argv ', process.argv)
 console.log('process.env.NODE_ENV ', process.env.NODE_ENV)
 
 export default defineNuxtConfig({
-  ssr: true,
+  ssr: false,
   sourcemap: {
     client: process.env.NODE_ENV === 'development'
   },
