@@ -30,6 +30,7 @@ export default defineNuxtConfig({
         // { src: 'https://awesome-lib.js' }
       ],
       link: [
+        { rel: 'shortcut icon', href: '/favicon.ico', type: 'image/x-icon'}
         // { rel: 'stylesheet', href: 'https://awesome-lib.css' }
       ],
       style: []

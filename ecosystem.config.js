@@ -1,15 +1,24 @@
 module.exports = {
   apps : [{
+    name:'nuxt3-ssr',
     script: './.output/server/index.mjs',
-    watch: ['./.output/']
+    // watch: ['./.output/public'],
+    env: {
+      "PORT": 3000,
+      "NODE_ENV": "development"
+    },
+    // env_production: {
+    //   "PORT": 80,
+    //   "NODE_ENV": "production",
+    // }
   }],
 
   deploy : {
     production : {
-      user : 'SSH_USERNAME',
-      host : 'SSH_HOSTMACHINE',
-      ref  : 'origin/master',
-      repo : 'GIT_REPOSITORY',
+      user : '',
+      host : '',
+      ref  : 'origin/main',
+      repo : '',
       path : 'DESTINATION_PATH',
       'pre-deploy-local': '',
       'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env production',
