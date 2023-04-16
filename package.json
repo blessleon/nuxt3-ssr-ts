@@ -2,8 +2,16 @@
   "name": "nuxtapp",
   "version": "1.0.1",
   "private": true,
+  "description": "nuxt3, vue3, sentry, mockjs, element-plus, ssr mode, pm2 server",
+  "author": "Blessleon",
+  "repository": "https://github.com/blessleon/nuxt3-ssr-ts.git",
+  "homepage": "https://github.com/blessleon/nuxt3-ssr-ts",
+  "engines": {
+    "node": ">=16"
+  },
   "scripts": {
     "build": "nuxt build",
+    "build:test": "nuxt build --dotenv .env.test",
     "dev": "nuxt dev -p 3001",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
