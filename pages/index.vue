@@ -3,7 +3,7 @@
     <el-header>Blessleon</el-header>
     <el-main>
       <div class="main-contaier flex flex-wrap m0a">
-        <el-card class="m-card" v-for="card in cardData">
+        <el-card class="m-card" v-for="card in cardData" :key="card.id">
           <img src="https://shadow.elemecdn.com/app/element/hamburger.9cf7b091-55e9-11e9-a976-7f4d0b07eef6.png"
             class="image" />
           <div style="padding: 14px">
@@ -27,7 +27,7 @@ export default {
     const cardData = ref<Array<CardItem>>([])
     const getCardData = () => {
       return new Promise(async (resolve) => {
-        let { data } = await useFetch(() => '/api/card', { method: 'post' })
+        let { data } = await useFetch(() => '/api/card', { method: 'get' })
         resolve({
           records: unref(data)?.records,
           total: unref(data)?.total
@@ -52,6 +52,5 @@ export default {
 }
 .m-card {
   width: 280px;
-  margin: 0px 10px 10px 0px;
 }
 </style>

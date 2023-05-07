@@ -1,7 +1,7 @@
 
 <template>
   <div id="app">
-    <NuxtLoadingIndicator color="green"/> 
+    <NuxtLoadingIndicator/> 
     <NuxtPage />
   </div>
 </template>
