@@ -20,11 +20,12 @@
   "devDependencies": {
     "@element-plus/nuxt": "^1.0.4",
     "@types/mockjs": "^1.0.7",
-    "cross-env": "^7.0.3",
     "css-loader": "^6.7.3",
     "dotenv": "^16.0.3",
+    "javascript-obfuscator": "^4.1.0",
     "mockjs": "^1.1.0",
     "nuxt": "3.0.0",
+    "rollup-plugin-obfuscator": "^1.1.0",
     "rollup-plugin-visualizer": "^5.9.0",
     "sass": "^1.60.0",
     "sass-loader": "^13.2.2",
@@ -32,10 +33,13 @@
     "unplugin-vue-components": "^0.24.1"
   },
   "dependencies": {
+    "@ant-design/icons-vue": "^6.1.0",
+    "@element-plus/icons-vue": "^2.1.0",
     "@sentry/browser": "^7.42.0",
     "@sentry/node": "^7.46.0",
     "@sentry/tracing": "^7.42.0",
     "@sentry/vue": "^7.46.0",
+    "ant-design-vue": "^4.0.0",
     "element-plus": "^2.3.2"
   }
 }

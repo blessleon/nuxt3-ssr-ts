@@ -1,5 +1,5 @@
 <template>
-  <div>INDEX</div>
+  <div>Sentry</div>
   <button @click="clickEv()">点击</button>
 </template>
 <script lang="ts">
