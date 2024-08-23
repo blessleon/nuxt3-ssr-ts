@@ -6,7 +6,6 @@ export default defineNuxtPlugin((nuxtApp) => {
   // console.log('nuxtApp: ', nuxtApp)
   const release = `${pkg.name}@${pkg.version}`
   const environment = process.env.NODE_ENV
-  console.log('environment: ', environment)
   const app = nuxtApp.vueApp
 
   Sentry.init({

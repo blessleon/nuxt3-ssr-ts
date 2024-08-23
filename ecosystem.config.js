@@ -1,6 +1,6 @@
 module.exports = {
   apps : [{
-    name:'nuxt3-ssr',
+    name:'nuxtapp',
     script: './.output/server/index.mjs',
     // watch: ['./.output/public'],
     env: {
